@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!--響應式中繼標籤-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!--jquery-->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+
+  <!--圖標-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+  <!--icon-->
+  <link rel="icon" type="image/png" href="../img/location.png" />
+  <title>中部景點拍</title>
+  <link rel=stylesheet type="text/css" href="../style/parkStyle.css">
+    <link rel=stylesheet type="text/css" href="../style/titleandbottom.css">
+  <style>
+  </style>
+  <script>
+    $(document).ready(function() {
+
+
+      //   $("#like").click(function(){
+      //     $("#nums").html(function(i,val){
+      //       return val*1+1;
+      //     });
+
+      //     $("#like").click(function() {
+      // $('#nums').html(function(i, val) {
+      //     $.ajax({
+      //         url: 'https://report-bbchuoo.c9users.io/report/html/park.html?',
+      //         type: 'POST',
+      //         data: {increment: true},
+      //         success: function() { alert('Request has returned') }
+      //     });
+      //     return +val+1;
+      // });  
+      // });
+
+      // });
+
+      // $("#btn-thumbs-up").click(function(){
+
+
+      // });
+
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <!--導覽列-->
+
+
+  <nav class="container navbar navbar-expand-xl navbar-light bg-white">
+
+    <a class="navbar-brand nav-title" href="https://report-bbchuoo.c9users.io/report/html/home.html">中部景點拍</a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+
+          <a class="nav-link" href="https://report-bbchuoo.c9users.io/report/html/leaderboard/leaderboard.html">熱搜排行榜</a>
+        </li>
+
+        <!--下拉式選單dropdown-->
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          地區分類
+        </a>
+
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">苗栗縣</a>
+
+            <!--dropdown-divider水平分隔線-->
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">臺中市</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">彰化縣</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">南投縣</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">雲林縣</a>
+          </div>
+
+        </li>
+        <!--end of 地區分類-->
+
+        <li>
+
+
+          <form class="form-inline my-2 my-lg-0">
+
+            <input class="form-control mr-sm-2" type="search" placeholder="關鍵字搜尋" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+
+
+          </form>
+        </li>
+      </ul>
+      <!--end of ul-->
+
+
+
+
+      <ul class="navbar-nav ">
+
+        <li class="nav-item ">
+          <a class="nav-link" href="#">加入會員</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="https://report-bbchuoo.c9users.io/%E5%B0%8F%E5%B0%88%E9%A1%8C2/sign.html">會員登入</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          我的收藏
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">追蹤清單</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">我要推薦</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">聯絡我們</a>
+          </div>
+
+    </div>
+    </ul>
+
+    </div>
+  </nav>
+
+
+
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-12 ">
+
+        <div>
+          <img src="../img/location48.png" class="mb-4">
+          <span style="font-size:30px">臺中國家歌劇院</span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+
+
+        <div id="carousel-fade" class="carousel carousel-fade mb-5" data-ride="carousel" data-interval="2000">
+
+
+
+          <div class="carousel-inner embed-responsive embed-responsive-16by9 text-center block-carousel-style" role="listbox">
+            <div class="carousel-item embed-responsive-item active">
+              <img src="../pagination/images00.jpg" alt="First slide image" class="img-responsive">
+
+            </div>
+
+            <div class="carousel-item embed-responsive-item ">
+              <img src="../pagination/images01.jpg" alt="Second slide image" class="img-responsive">
+
+            </div>
+
+            <div class="carousel-item embed-responsive-item ">
+              <img src="../pagination/images02.jpg" alt="Third slide image" class="img-responsive">
+
+
+            </div>
+
+            <div class="carousel-item embed-responsive-item ">
+              <img src="../pagination/images03.jpg" alt="Second slide image" class="img-responsive">
+
+            </div>
+
+            <a class="carousel-control-prev" href="#carousel-fade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+            <a class="carousel-control-next" href="#carousel-fade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+          </div>
+
+        </div>
+
+
+
+        <div class="block-content-style mb-5">
+          <div class="p-4">
+
+            <div class="text-center py-2 block-content-title" >
+              <span class="fas fa-search icon-style" ></span>
+              <h2 class="d-inline-block">景點簡介</h2>
+            </div>
+
+            <div class="pt-4">
+
+              <span class="text-content ">
+              臺中國家歌劇院結合藝術與人文，
+        擁有三座國際級演出場地——大劇院、中劇院及小劇場，能針對不同類型的節目提供演出舞台；
+        多功能角落沙龍可配合教育推廣、演講等活動靈活運用；
+        戶外劇場的綠地與屋頂空中花園則是民眾休憩的好去處，
+        融入城市生活，成為都會藝術生活代言人的最佳場域。</span>
+            </div>
+
+
+          </div>
+
+        </div>
+    <div>
+      
+      
+    </div>
+    
+    
+         <div class="block-content-style mb-5 ">
+          <div class="p-4">
+
+            <div class="text-center py-2 block-content-title" >
+              <span class="fas fa-search icon-style" ></span>
+              <h2 class="d-inline-block" >詳細資料</h2>
+            </div>
+
+            <div class="pt-4">
+
+              <dl>
+          <dt>地址 <i class="far fa-check-square"></i>：　</dt>
+          <dd>40756 臺中市西屯區惠來路二段101號</dd>
+          <dt>電話 <i class="fas fa-phone"></i>：　</dt>
+          <dd>04-2251-1777</dd>
+          <dt>營業時間 <i class="far fa-clock"></i>：　</dt>
+          <dd>週日至週四 11：30 ～ 21：00 週五至週六及國定假日 11：30 ～ 22：00</dd>
+          <dt>費用簡介 <i class="fas fa-dollar-sign"></i>：　</dt>
+          <dd>免收費「參展、演講、歌劇須另行購票」</dd>
+
+          <dt>停車資訊 <i class="fas fa-car"></i>：　</dt>
+          <dd><a href="http://www.npac-ntt.org/archive?uid=35" target="_blank">http://www.npac-ntt.org/archive?uid=35</a></dd>
+          <dt>交通資訊 <i class="fas fa-bus"></i>：　</dt>
+          <dd><a href="https://www.npac-ntt.org/map?uid=34" target="_blank">https://www.npac-ntt.org/map?uid=34</a></dd>
+        </dl>
+            </div>
+
+
+          </div>
+
+        </div>
+    <div>
+      
+      
+    </div>
+    
+    
+    
+
+
+      </div>
+      <!--end of col-sm-8 -->
+      <div class="col-sm-4 mb-5">
+        
+
+        <div class="text-center p-4 block-side-background">
+          
+            <div class="text-center py-2 block-side-title" >
+              <span class="fas fa-angle-double-right icon-style" ></span>
+              <h3 class="d-inline-block">喜歡請按讚</h3>
+            </div>
+<div class="mt-3">
+  <input type="image" id="btn-thumbs-up" img src="../img/22.png" style="outline:none;vertical-align:middle">
+          <span id="nums" class="d-inline-block nums-text" style="vertical-align:middle">　0</span>
+</div>
+
+        </div>
+      
+
+      </div>
+      <!--end of col-sm-4 -->
+
+
+    </div>
+    <!--end of row -->
+  </div>
+  <!--end of container -->
+
+  <!--底部-->
+
+  <div class="container-fluid block-bottom text-center">
+    <div class="row align-items-end ">
+      <div class="col-sm-12 ">
+        <div class="block-bottom-text">
+          <h4>HELLO!</h4>
+          <h4>A LITTLE MORE BY MYSELF</h4>
+          <div class="block-bottom-icons">
+            <a href="#"><img src="../img/icon/iconsfacebook.png" ></a>
+            <a href="#"><img src="../img/icon/iconsinstagram.png"></a>
+          </div>
+          <span>有任何問題，歡迎來信<br/></span>
+         <span>E-mail:centralattractions@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

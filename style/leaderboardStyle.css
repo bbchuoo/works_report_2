@@ -1,0 +1,119 @@
+/*導覽*/
+
+.nav-link.active,
+.show>.nav-link {
+  color: #FFF !important;
+  background-color: #7BBEE8 !important;
+}
+
+a {
+  color: #635d59;
+}
+
+/*---------------------------------------------------*/
+
+/*整個row*/
+
+.block-animation:hover {
+  cursor: pointer;
+
+}
+
+/*---------------------------------------------------*/
+
+/*名次顏色*/
+
+.ranking-text {
+  color: #f3ca30;
+}
+
+/*---------------------------------------------------*/
+/*圖片*/
+.block-img{max-height:300px;max-width:300px;}
+
+/*卡片*/
+
+.card-header span {
+  font-size: 1.3em;
+}
+
+.li-icon-style {
+  color: #E87D75;
+}
+.card-header{
+  background-color: #C6E0BF;
+}
+
+/*---------------------------------------------------*/
+
+/*more*/
+
+.more-icon-style {
+  font-size: 2em;
+  /*color: #7BBEE8;*/
+
+}
+
+.block-animation-blue {
+  position: relative;
+  animation: moving 2s infinite;
+  /*IE*/
+  animation: moving 2s infinite;
+  /*FireFox*/
+  -webkit-animation: moving 1.5s infinite;
+  /*Chrome, Safari*/
+}
+
+
+@-webkit-keyframes moving {
+  from {
+    left: 0px;
+    color:#2894ff;
+  }
+  to {
+    left: 20px;
+    color:#7BBEE8;
+  }
+    
+}
+.block-animation-yellow {
+  position: relative;
+  animation: moving2 2s infinite;
+  /*IE*/
+  animation: moving2 2s infinite;
+  /*FireFox*/
+  -webkit-animation: moving2 1.5s infinite;
+  /*Chrome, Safari*/
+}
+
+
+@-webkit-keyframes moving2 {
+  from {
+    left: 0px;
+    color:#FFAC12;
+  }
+  to {
+    left: 20px;
+    color:#F2CF92;
+  }
+    
+}
+
+
+
+
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/

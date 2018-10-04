@@ -1,0 +1,61 @@
+
+
+  /*輪播*/
+
+    .carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+  }
+
+  .carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+  }
+
+.block-carousel-style{
+   background-color: #FAFAFA;
+     box-shadow:1px 0px 10px 0.3px #CFCFCF;
+}
+
+
+/*---------------------------------------------------*/
+
+/*景點介紹*/
+
+.block-content-style {
+  background-image: url(../img/noise1.png);
+}
+
+.text-content {
+  color: #635d59;
+  line-height: 35px;
+  font-size: 17px;
+}
+
+dl dt {
+  /*font-weight: normal;*/
+  float: left;
+}
+
+
+
+.block-content-title{
+  background-color:#FFF;
+  color:#E87D75;
+}
+.icon-style{
+  font-size:30px;
+}
+/*---------------------------------------------------*/
+.block-side-background {
+   background-image: url(../img/noise.png);
+}
+/*---------------------------------------------------*/
+.block-side-title{
+
+   background-color:#FFF;
+  color:#E87D75;
+}
+.nums-text{
+  
+}

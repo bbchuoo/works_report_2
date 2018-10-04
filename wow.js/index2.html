@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>WOW.js DEMO</title>
+<link rel="stylesheet" href="css/libs/animate.css">
+<style>
+* { margin: 0; padding: 0;}
+body { overflow-x: hidden; font-family: "Microsoft Yahei";}
+body h1 { width: 100%; margin: 80px 0; font-size: 50px; font-weight: 500; text-align: center;}
+body .txt { margin: 80px 0; font-size: 16px; text-align: center;}
+.dowebok { margin: 0 auto;}
+.dowebok ul { list-style-type: none;}
+.dowebok .row { font-size: 0; text-align: center;}
+.dowebok .wow { display: inline-block; width: 280px; height: 280px; margin: 30px 15px 0; border-radius: 50%; font: 30px/280px "Microsoft Yahei"; vertical-align: top; *display: inline; zoom: 1;}
+.bg-green { background: #5bd5a0;}
+.bg-blue { background: #1daee9;}
+.bg-purple { background: #c843a5;}
+.bg-red { background: #eb3980;}
+.bg-yellow { background: #ffcc35;}
+</style>
+<style type="text/css" id="parrottalks-notetaker-style">      html > body.evernote_clearly__before_visible #parrottalks-notetaker > iframe,      html > body.clearlyBeforeVisible #parrottalks-notetaker > iframe:not(#evernoteGlobalTools):not(#evernoteOptionsPage):not(#evernoteClearlyArticle) {        visibility: visible !important;      }      .evernote_clearly__before_visible #evernote_clearly__reformat,      .clearlyBeforeVisible #evernoteClearlyArticle {        z-index: 2147483646 !important;      }    </style>
+<link rel="stylesheet" type="text/css" href="chrome-extension://jknhnffcaenjjlneglfcihapfklmefob/styles/search.css">
+<link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css"></head>
+
+<body>
+<h1>WOW.js - 讓頁面滾動更有趣</h1>
+
+<p class="txt">WOW.js 能讓頁面滾動時顯示動畫，使頁面更有趣。</p>
+
+<div class="dowebok">
+	<div class="row">
+		<div class="wow rollIn bg-blue animated" style="visibility: visible; animation-name: rollIn;"></div>
+		<div class="wow bounceInDown bg-green animated" style="visibility: visible; animation-name: bounceInDown;">WOW.js</div>
+		<div class="wow lightSpeedIn bg-purple animated" style="visibility: visible; animation-name: lightSpeedIn;"></div>
+	</div>
+
+	<div class="row">
+		<div class="wow rollIn bg-yellow animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: rollIn;">簡易使用</div>
+		<div class="wow pulse bg-red animated" data-wow-iteration="5" data-wow-duration="0.15s" style="visibility: visible; animation-duration: 0.15s; animation-iteration-count: 5; animation-name: pulse;"></div>
+		<div class="wow bounceInRight bg-blue animated" style="visibility: visible; animation-name: bounceInRight;">輕量級</div>
+	</div>
+
+	<div class="row">
+		<div class="wow bounceInLeft bg-green animated" style="visibility: visible; animation-name: bounceInLeft;"></div>
+		<div class="wow flipInX bg-purple animated" style="visibility: visible; animation-name: flipInX;">WOW.js</div>
+		<div class="wow bounceInRight bg-yellow animated" style="visibility: visible; animation-name: bounceInRight;"></div>
+	</div>
+
+	<div class="row">
+		<div class="wow rollIn bg-blue animated" style="visibility: visible; animation-name: rollIn;">無需 jQuery</div>
+		<div class="wow shake bg-red animated" data-wow-iteration="5" data-wow-duration="0.15s" style="visibility: visible; animation-duration: 0.15s; animation-iteration-count: 5; animation-name: shake;"></div>
+		<div class="wow swing bg-purple animated" data-wow-iteration="2" style="visibility: visible; animation-iteration-count: 2; animation-name: swing;">純 JS</div>
+	</div>
+
+	<div class="row">
+		<div class="wow rollIn bg-red animated" style="visibility: visible; animation-name: rollIn;"></div>
+		<div class="wow bounceInU bg-yellow animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">WOW.js</div>
+		<div class="wow lightSpeedIn bg-green animated" data-wow-delay="0.5s" data-wow-duration="0.15s" style="visibility: visible; animation-duration: 0.15s; animation-delay: 0.5s; animation-name: lightSpeedIn;"></div>
+	</div>
+
+	<div class="row">
+		<div class="wow bounceInLeft bg-purple animated" style="visibility: visible; animation-name: bounceInLeft;">依賴 animate.css</div>
+		<div class="wow pulse bg-blue animated" data-wow-iteration="5" data-wow-duration="0.25s" style="visibility: visible; animation-duration: 0.25s; animation-iteration-count: 5; animation-name: pulse;"></div>
+		<div class="wow lightSpeedIn bg-yellow animated" style="visibility: visible; animation-name: lightSpeedIn;">多種動畫</div>
+	</div>
+
+	<div class="row">
+		<div class="wow bounce bg-green animated" data-wow-iteration="5" data-wow-duration="0.15s" style="visibility: visible; animation-duration: 0.15s; animation-iteration-count: 5; animation-name: bounce;"></div>
+		<div class="wow bounceInUp bg-red animated" style="visibility: visible; animation-name: bounceInUp;">WOW.js</div>
+		<div class="wow bounceInRight bg-purple animated" style="visibility: visible; animation-name: bounceInRight;"></div>
+	</div>
+
+	<div class="row">
+		<div class="wow rollIn bg-red animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: rollIn;">無需 jQuery！？</div>
+		<div class="wow bounceInDown bg-green animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: bounceInDown;"></div>
+		<div class="wow bounceInRight bg-yellow animated" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: bounceInRight;">謝謝</div>
+	</div>
+</div>
+
+<script src="dist/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+
+
+
+
+
+
+
+

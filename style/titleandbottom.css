@@ -1,0 +1,68 @@
+/*身體*/
+
+body {
+  font-family: 微軟正黑體, sans-serif, Helvetica;
+  color: #635d59
+}
+
+/*---------------------------------------------------*/
+
+/*導覽列*/
+
+.nav-title {
+  font-size: 35px;
+  color: #E87D75!important;
+
+}
+
+nav li a {
+  font-size: 18px;
+
+}
+
+/*按鈕顏色*/
+
+.btn-outline-secondary:hover {
+  background-color: #E87D75;
+  color: #FFF;
+  border-color: #ffffff;
+
+}
+
+
+/*---------------------------------------------------*/
+
+/*響應式圖片*/
+  .img-responsive {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+/*---------------------------------------------------*/
+/*底部style*/
+
+.block-bottom {
+  border-top: 1px #DDDDDD solid;
+  /*//#FFAAA5*/
+  background-color: #E87D75;
+  min-height: 300px;
+  color: #FFF;
+
+}
+
+/*底部文字*/
+
+.block-bottom-text {
+  margin-top: 10vh;
+
+}
+
+/*底部icon*/
+
+.block-bottom-icons img {
+  width: 7vh;
+}
+
+/*---------------------------------------------------*/

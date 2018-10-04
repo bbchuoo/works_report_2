@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!--響應式中繼標籤-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--jquery-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!--圖標-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+  <!--icon-->
+  <link rel="icon" type="image/png" href="/report/img/location.png" />
+  <title>中部景點拍</title>
+  <link rel=stylesheet type="text/css" href="/report/style/titleandbottom.css">
+  <link rel=stylesheet type="text/css" href="/report/style/leaderboardStyle.css">
+  <script src="/report/js/leaderboard.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+  <html>
+  <head>
+    <style type="text/css">
+      .try-hide{
+        display:none;
+      }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script language="javascript">
+      $(document).ready(function(){
+         
+        var ok = parseInt('111111', 2), o, v = 1;
+        $("[id^=yy-menu]").each(function(index,data){
+           $(this).data("i", 1<<index);
+        }).click(function(){
+           v |= $(this).data("i");
+           if(v === ok){ 
+              $("#try").addClass("try-hide");
+           }
+           //点击一次后,设置按钮不可点选
+           $(this).attr("disabled",true)
+        });
+         
+      });
+    </script>
+  </head>
+  <body > 
+    <button id="yy-menu0">b0</button>
+    <button id="yy-menu1">b1</button> 
+    <button id="yy-menu2">b2</button> 
+    <button id="yy-menu3">b3</button> 
+    <button id="yy-menu4">b4</button> 
+    <button id="yy-menu5">b5</button> 
+     
+    <div id="try" 
+        style="background-color:green;width:200px;height:200px;">
+    </div> 
+  </body>
+</html>
+
+
+</body>
+
+</html>

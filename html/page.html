@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!--響應式中繼標籤-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--jquery-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <!--燈箱-->
+  
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+  
+  <!--圖標-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+  <!--icon-->
+  <link rel="icon" type="image/png" href="/report/img/location.png" />
+  <title>中部景點拍</title>
+  <link rel=stylesheet type="text/css" href="/report/style/titleandbottom.css">
+
+  <style>
+    /*導覽*/
+
+    .nav-link.active,
+    .show>.nav-link {
+      color: #FFF !important;
+      background-color: #7BBEE8 !important;
+    }
+
+    a {
+      outline: none;
+      /* for Firefox Google Chrome  去除外框*/
+    }
+
+    a:hover {
+      color: #FFF;
+    }
+    
+    .block-title{
+    height:300px;
+    
+    background-color:#FFFAF2;  
+    }
+    .block-title:hover{
+      background-color:#FFF;  
+      border:1px solid #F5F5F5;
+    }
+.venobox img{
+
+  -webkit-box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.venobox img:hover{
+  -webkit-box-shadow: 0 6px 20px rgba(0,0,0,0.19);
+	 box-shadow: 0 6px 20px rgba(0,0,0,0.19);
+	 opacity:0.9;
+}
+.title{
+  text-shadow:3px 1px 1px #FAFAFA;
+  color:#E87D75;
+}
+.btn-for-heart{
+  outline:none;
+}
+.label-for-heart{
+  font-size:25px;
+}
+
+
+ 
+  </style>
+  <script>
+    $(document).ready(function() {
+
+
+
+
+      $(".nav").children("a").click(function() {
+        $(".active").removeClass("active");
+        $(this).addClass("active");
+      });
+
+$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
+      
+$("#BtnForHeart").click(function() {
+alert($('#counter').html);
+});
+
+
+    });
+  </script>
+
+</head>
+
+<body>
+
+
+  <!--導覽列-->
+
+
+  <nav class="container navbar navbar-expand-xl navbar-light bg-white">
+
+    <!--公司名稱專案名稱產品名稱 navbar-brand -->
+    <a class="navbar-brand nav-title" href="https://report-bbchuoo.c9users.io/report/html/home.html">中部景點拍</a>
+
+    <!--漢堡式選單按鈕 navbar-toggler-->
+    <!--可以展開的漢堡式選單(data-toggle是js屬性) data-toggle="collapse"-->
+    <!--要折疊在漢堡式選單裡面的內容 data-target="#navbarSupportedContent"-->
+    <!--默認是關閉的aria-expanded="false"-->
+    <!--告訴輔助軟件這個漢堡按鈕是用來做什麼用的(切換導覽列)aria-label="Toggle navigation"-->
+    <!--漢堡圖示icon navbar-toggler-icon-->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <!--隱藏物件 collapse 如果沒有設定的話變成漢堡時會自動打開-->
+    <!--用於外層中斷點群組 collapse.navbar-collapse -->
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+      <!--提供完整的高和輕便的導航navbar-nav-->
+      <!--把下一個欄位向右推mr-auto-->
+      <ul class="navbar-nav mr-auto">
+
+        <!--導覽項目(一定要綁定這個是確保它保持在正確的位置跟使用正確的樣式)nav-item-->
+        <li class="nav-item">
+
+          <!--導覽連結(一定要綁定這個是確保它保持在正確的位置跟使用正確的樣式)nav-link-->
+          <a class="nav-link" href="https://report-bbchuoo.c9users.io/report/html/leaderboard/leaderboard.html">熱搜排行榜</a>
+        </li>
+
+        <!--下拉式選單dropdown-->
+        <li class="nav-item dropdown">
+
+          <!--下拉式選單樣式dropdown-toggle-->
+          <!--表示引用js給外層添加一個open類,<div class="dropdown">-->
+          <!--默認關閉,點擊一次為<div class="dropdown open">，-->
+          <!--再點擊一次為<div class ="dropdown">-->
+          <!-- data-toggle="dropdown"-->
+          <!--表示點擊的時候會出現菜單或是浮動元素 aria-haspopup :true-->
+          <!--表示展開狀態 默認為undefined,aria-expanded-->
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          地區分類
+        </a>
+
+          <!--dropdown-menu 沒有這段的話，下拉式選單不會隱藏在主選單當中-->
+          <!--aria-labelledby的值通常設置成模態框的標題id,主要為了盲人閱讀-->
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">苗栗縣</a>
+
+            <!--dropdown-divider水平分隔線-->
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">臺中市</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">彰化縣</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">南投縣</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">雲林縣</a>
+          </div>
+
+        </li>
+        <!--end of 地區分類-->
+
+        <li>
+
+          <!--在內聯表單中，所有元素都是內聯的，左對齊的，並且標籤是並排的-->
+          <!--所以要加上form-inline 不然button就會跑去下面-->
+          <!--m - 這個 class 會設定 margin-->
+          <!--y - 這個 class 會設定 *-top 和 *-bottom-->
+          <!--2 - (預設時) 這個 class 會設定 margin 或 padding 於 $spacer * .5-->
+
+          <form class="form-inline my-2 my-lg-0">
+
+            <!--改變樣式讓他更好看form-control-->
+            <input class="form-control mr-sm-2" type="search" placeholder="關鍵字搜尋" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+      <!--end of ul-->
+
+
+
+
+      <ul class="navbar-nav ">
+
+        <li class="nav-item ">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">加入會員</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">會員登入</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          我的收藏
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">追蹤清單</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">我要推薦</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#send-email">聯絡我們</a>
+          </div>
+
+    </div>
+    </ul>
+
+    </div>
+  </nav>
+  <!--導覽-->
+
+
+
+  <div class="container">
+    <nav class="nav nav-pills  flex-sm-row nav-justified" id="nav-group">
+
+      <a class="flex-sm-fill text-sm-center nav-link nav-item active " href="#page">景點介紹</a>
+
+      <a class="flex-sm-fill text-sm-center nav-link nav-item " href="#page1">圖片資訊</a>
+
+      <a class="flex-sm-fill text-sm-center nav-link  nav-item" href="#page2">景點資訊</a>
+
+      <a class="flex-sm-fill text-sm-center nav-link nav-item " href="#page3">討論區</a>
+
+
+      <!--onclick="getData('leaderboard.3.html');"-->
+      <!--onclick="deletediv();"-->
+    </nav>
+    <hr/>
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 d-flex flex-row justify-content-center align-items-center text-center block-title" id="page" >
+
+        <div>
+          <h1 class="title">臺中國家歌劇院</h1>
+        </div>
+
+      </div>
+       <div class="col-sm-6 d-flex flex-row  align-items-center " id="page" style="height:300px;background-color:#FFFAF2;">
+
+        <div>
+         
+          <span style="font-size:20px">臺中國家歌劇院結合藝術與人文，
+        擁有三座國際級演出場地——大劇院、中劇院及小劇場，能針對不同類型的節目提供演出舞台；
+        多功能角落沙龍可配合教育推廣、演講等活動靈活運用；
+        戶外劇場的綠地與屋頂空中花園則是民眾休憩的好去處，
+        融入城市生活，成為都會藝術生活代言人的最佳場域。</span>
+        </div>
+
+      </div>
+      
+
+      <div class="col-sm-12 d-flex flex-row justify-content-center align-items-center text-center" id="page" style="height:300px;">
+        <div>
+          <div class="pb-2">
+           
+<input type="image" id="BtnForHeart" img src="../img/22.png" class="align-top btn-for-heart">
+<label class="align-middle label-for-heart" for="BtnForHeart">喜歡請給心</label>
+          </div>
+
+          <div class="progress ">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+          </div>
+
+          <div class="pt-2">
+            <span>目前已經有<span id="counter">1</span>人案讚</span>
+          </div>
+        </div>
+
+
+
+
+      </div>
+<a class="fancybox" rel="group" href="/report/img/pagination/images01.jpg"><img src="/report/img/pagination/images01.jpg" alt="" /></a>
+<a class="fancybox" rel="group" href="/report/img/pagination/images01.jpg"><img src="/report/img/pagination/images01.jpg" alt="" /></a>
+
+      <div class="col-sm-4 col-6 mb-4"><a  href="/report/img/pagination/images01.jpg"><img src="/report/img/pagination/images01.jpg" class="img-responsive"/></a></div>
+      <div class="col-sm-4 col-6 mb-4"><a href="/report/img/pagination/images02.jpg"><img src="/report/img/pagination/images02.jpg" class="img-responsive"/></a></div>
+      <div class="col-sm-4 col-6 mb-4"><a  href="/report/img/pagination/images03.jpg"><img src="/report/img/pagination/images03.jpg" class="img-responsive"/></a></div>
+
+      <div class="col-sm-4 col-6 mb-4"><a href="/report/img/pagination/images04.png"><img src="/report/img/pagination/images04.png" class="img-responsive"/></a></div>
+      <div class="col-sm-4 col-6 mb-4"><a  href="/report/img/pagination/images05.png"><img src="/report/img/pagination/images05.png"  class="img-responsive"/></a></div>
+      <div class="col-sm-4 col-6 mb-4"><a href="/report/img/pagination/images06.png"><img src="/report/img/pagination/images06.png"  class="img-responsive"/></a></div>
+
+
+
+
+      <div class="col-sm-6 " id="page2" style="height:500px">
+        <div>
+
+          <ol style="list-style-type:none;">
+            <li class="p-2">地址 <i class="far fa-check-square"></i>： 40756 臺中市西屯區惠來路二段101號</li>
+            <li  class="p-2">電話 <i class="fas fa-phone"></i>： 04-2251-1777</li>
+            <li  class="p-2">營業時間 <i class="far fa-clock"></i>： 週日至週四 11：30 ～ 21：00 週五至週六及國定假日 11：30 ～ 22：00</li>
+            <li  class="p-2">費用簡介 <i class="fas fa-dollar-sign"></i>： 免收費「參展、演講、歌劇須另行購票」</li>
+            <li  class="p-2">停車資訊 <i class="fas fa-car"></i>： <a href="http://www.npac-ntt.org/archive?uid=35" target="_blank">http://www.npac-ntt.org/archive?uid=35</a></li>
+            <li  class="p-2">交通資訊 <i class="fas fa-bus"></i>： <a href="https://www.npac-ntt.org/map?uid=34" target="_blank">https://www.npac-ntt.org/map?uid=34</a></li>
+     
+            
+          </ol>
+        </div>
+
+      </div>
+      <div class="col-sm-6" style="height:500px" id="page3">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.251078143014!2d120.6382150154085!3d24.162925784387674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dec4ca3a271%3A0xd8b5a337271e60e2!2z6Ie65Lit5ZyL5a625q2M5YqH6Zmi!5e0!3m2!1szh-TW!2stw!4v1533313208518" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+
+    </div>
+    <!--end of row-->
+
+
+  </div>
+  <!--end of container-->
+
+
+
+
+
+
+  <!--底部-->
+
+  <div class="container-fluid block-bottom text-center ">
+    <div class="row align-items-end ">
+      <div class="col-sm-12 ">
+        <div class="block-bottom-text">
+          <h4>HELLO!</h4>
+          <h4>A LITTLE MORE BY MYSELF</h4>
+          <div class="block-bottom-icons">
+            <a href="#"><img src="/report/img/icon/iconsfacebook.png" ></a>
+            <a href="#"><img src="/report/img/icon/iconsinstagram.png"></a>
+          </div>
+             <span>有任何問題，歡迎來信<br/></span>
+          <span>E-mail:centralattractions@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+
+
+
+          <div class="row">
+
+            <div class="col-sm-12 mr-auto">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="col-sm-6" style="height:130px;">
+              <img src="https://report-bbchuoo.c9users.io/report/img/sign/page1.png" style="width:100%;height:100%">
+            </div>
+            <div class="col-sm-6" style="height:130px;">
+              <img src="https://report-bbchuoo.c9users.io/report/img/sign/page2.png" style="width:100%;height:100%">
+            </div>
+          </div>
+        </div>
+        <!--modal-header-->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-6
+            d-flex flex-row justify-content-center align-items-center " style="border-right:1px solid #E8E8E8">
+              <form class="d-flex flex-column justify-content-center align-items-center">
+
+                <input type="text" placeholder="會員帳號" class=" mx-auto p-2 my-3">
+
+                <input type="text" placeholder="會員密碼" class="mx-auto p-2">
+
+                <input type="submit" class="btn btn-outline-secondary my-3 " value="登入">
+
+                <div>
+                  <input type="checkbox" class="form-check-input" id="check">
+                  <label class="form-check-label" for="check">記住我</label>
+                </div>
+
+
+              </form>
+            </div>
+            <div class="col-sm-6 ">
+              <form class="d-flex flex-column justify-content-center align-items-center">
+
+                <input type="text" placeholder="姓名" class=" mx-auto p-2 my-3">
+
+                <input type="text" placeholder="信箱" class=" mx-auto p-2">
+
+                <input type="text" placeholder="會員帳號" class="mx-auto p-2 my-3">
+
+                <input type="text" placeholder="會員密碼" class="mx-auto p-2">
+
+                <input type="text" placeholder="確認密碼" class="mx-auto p-2 my-3">
+
+                <input type="submit" class="btn btn-outline-secondary " value="送出">
+
+
+
+              </form>
+            </div>
+          </div>
+          <!--<div class="modal-footer">-->
+
+          <!--</div>-->
+        </div>
+        <!--modal-body-->
+      </div>
+      <!--modal-content-->
+    </div>
+    <!--modal-dialog -->
+  </div>
+  <!--modal-->
+
+  <!-- Modal  2 -->
+  <div class="modal fade" id="send-email" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content">
+        <div class="modal-header p-0">
+
+
+          <div class="container">
+            <div class="row px-0">
+
+              <div class="col-sm-12 mr-auto">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="col-sm-12 text-center">
+
+                <img src="https://report-bbchuoo.c9users.io/report/img/sign/page3.png">
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--modal-header-->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12
+            d-flex flex-row justify-content-center align-items-center ">
+
+              <form class="d-flex flex-column justify-content-center align-items-center" id="email-form" action="https://formspree.io/centralattractions@Gmail.com" method="POST">
+                <div class="mb-3"><input class="p-2 " id="email-name" type="text" name="name" placeholder="姓名" data-toggle="tooltip" title="請輸入姓名" data-placement="right"></div>
+                <div class="mb-3"> <input class="p-2 " id="email-youremail" type="email" name="_replyto" placeholder="電子信箱" data-toggle="tooltip" title="請輸入信箱" data-placement="right"></div>
+                <div class="mb-3"> <textarea class=" " id="email-content" style="width:300px;height:100px;" placeholder="感謝您的來信我們會盡快回覆，請務必填寫正確信箱" name="message" data-toggle="tooltip" title="請輸入內容" data-placement="right"></textarea></div>
+                <div><input type="submit" class="btn btn-outline-secondary " id="btn-send-email" value="送出"></div>
+
+
+
+
+
+              </form>
+            </div>
+
+          </div>
+          <!--<div class="modal-footer">-->
+
+          <!--</div>-->
+        </div>
+        <!--modal-body-->
+      </div>
+      <!--modal-content-->
+    </div>
+    <!--modal-dialog -->
+  </div>
+  <!--modal-->
+
+</body>
+
+</html>

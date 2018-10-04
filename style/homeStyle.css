@@ -1,0 +1,299 @@
+ #gotop {
+     font-size:50px;
+   position: fixed;
+   line-height: 50px;
+   color: #7BBEE8;
+   right: 0px;
+   bottom: 0px;
+   z-index: 99999;
+   display:none;
+   
+ }
+
+#gotop:hover{
+color:#0080ff;
+cursor: pointer;
+}
+
+
+ /*---------------------------------------------------*/
+
+ /*首頁輪播*/
+
+ .carousel.carousel-fade .carousel-item {
+   display: block;
+   opacity: 0;
+   transition: opacity ease-out .7s;
+ }
+
+ .carousel.carousel-fade .carousel-item.active {
+   opacity: 1 !important;
+ }
+
+ /*---------------------------------------------------*/
+
+ /*about us  圖片*/
+
+ .img-fluid {
+   max-width: 100%;
+   height: auto;
+ }
+
+ .btn-outline-secondary {
+   background-color: white;
+
+ }
+
+ /*響適應文字*/
+
+ @media screen and (max-width: 500px) {
+
+   .mobile-text {
+
+     font-size: 2em;
+
+   }
+ }
+
+ /*按鈕顏色*/
+
+ .btn-outline-secondary:hover {
+   background-color: #E87D75;
+   color: #FFF;
+   border-color: #ffffff;
+ }
+
+ /*center-vertical裡面的文字大小*/
+
+ .joinUs p {
+   font-size: 18px;
+ }
+
+
+ .joinUs {
+
+   /*background-color: #F2CF92;*/
+   background-image: linear-gradient(to top, #F5E8FF, #FFF);
+   /*display: flex;*/
+   /*align-items: center;*/
+   /*justify-content: center;*/
+   min-height: 400px;
+ }
+
+ /*---------------------------------------------------*/
+
+ /*四格*/
+
+ .block-popular-height {
+   max-height: 279px;
+ }
+
+ .img-responsive {
+   width: auto;
+   height: auto;
+   max-width: 100%;
+   max-height: 100%;
+ }
+
+
+ /*---------------------------------------------------*/
+
+ /*----三格陣列 長條R&R-----*/
+
+ .decoration {
+   min-height: 300px;
+ }
+
+ /*---------------------------------------------------*/
+
+ /*地區分類*/
+
+ .card-img-top {
+
+   height: 250px;
+ }
+
+ .cardStyle {
+   max-width: 18rem;
+   margin-right: auto;
+   margin-left: auto;
+ }
+
+ .sectionCard {
+   min-height: 500px;
+ }
+
+ .fa-camera {
+   width: 30px;
+   height: 30px;
+ }
+
+ .sectionCard span {
+   font-size: 30px
+ }
+
+ /*---------------------------------------------------*/
+
+ /*輪播*/
+
+ /*.nbs-flexisel-nav-left {*/
+
+ /*  padding: 0px;*/
+
+ /*  left: 0px;*/
+
+ /*  background: #FFF;*/
+
+ /*  color: #888888;*/
+
+ /*}*/
+
+ /*.nbs-flexisel-nav-right {*/
+
+ /*  padding: 0px;*/
+
+ /*  right: 0px;*/
+
+ /*  background: #FFF;*/
+
+ /*  color: #888888;*/
+
+ /*}*/
+
+ /*.nbs-flexisel-nav-left:before {*/
+
+ /*  content: url(../carousel/images/001.png);*/
+
+ /*  opacity: 1.0;*/
+
+ /*}*/
+
+ /*.nbs-flexisel-nav-right:before {*/
+
+ /*  content: url(../carousel/images/002.png);*/
+
+ /*  opacity: 1.0;*/
+
+ /*}*/
+
+ /*.nbs-flexisel-inner {*/
+
+ /*  border: none;*/
+
+ /*  background: white;*/
+
+ /*  -webkit-border-radius: 0px;*/
+
+ /*  border-radius: 0px;*/
+
+ /*}*/
+
+ .img-transition {
+   transition: 3s;
+ }
+
+ .img-transition:hover {
+   transform: scale(1.1);
+
+ }
+
+ /*.img-wrapper {*/
+
+ /*  overflow:hidden;*/
+
+ /*}*/
+
+ /*---------------------------------------------------*/
+
+ /*紫色*/
+
+ .block-fixed-background {
+   background-color: #F5E8FF;
+ }
+
+ .jquery-paroller-style {
+   background: url(../img/banner/pinkBg.jpg) repeat center;
+   background-size: 100%;
+   height: 300px;
+   width: 600px;
+
+ }
+
+ @media (max-width: 600px) {
+   .block-fixed-background {
+     display: none;
+   }
+ }
+
+ .border-hover:hover {
+
+   box-shadow: inset 0 0 0 55px #DBABFF;
+   /* For Latest Opera */
+ }
+
+ .img-transform {
+   transition: 3s;
+ }
+
+ .img-transform:hover {
+
+
+   transform: scale(1.1);
+
+
+ }
+
+ .hidden {
+   overflow: hidden;
+ }
+
+ /*---------------------------------------------------*/
+
+ /*打字*/
+
+ @keyframes dosteps {
+   from {
+     width: 0
+   }
+ }
+
+ .keyboard {
+   background-color: #F5E8FF;
+ }
+
+ .keyboard h3 {
+   color: #DBABFF;
+   width: 500px;
+   overflow: hidden;
+   white-space: nowrap;
+   /*不要換行*/
+   animation: dosteps 5s steps(17);
+   animation-iteration-count: infinite;
+ }
+
+ /*---------------------------------------------------*/
+
+ /*ig*/
+
+ @media (min-width: 1200px) {
+   .container-custom-width {
+     max-width: 720px;
+   }
+ }
+
+ @media (min-width: 992px) {
+   .container-custom-width {
+     max-width: 720px;
+   }
+ }
+
+ @media (max-width: 767px) {
+   #ig {
+     display: none;
+   }
+   #igLogo {
+     display: none;
+   }
+ }
+
+ /*---------------------------------------------------*/

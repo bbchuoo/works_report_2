@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--icon and title-->
+  <link rel="icon" type="image/png" href="../img/location.png" />
+  <link rel=stylesheet type="text/css" href="../style/titleandbottom.css">
+  <title>中部景點拍</title>
+  <style type="text/css">
+    /*導覽*/
+
+    .nav-link.active,
+    .show>.nav-link {
+      color: #FFF !important;
+      background-color: #7BBEE8 !important;
+    }
+
+    a {
+      color: #635d59;
+    }
+
+    /*---------------------------------------------------*/
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $(".nav").children("a").click(function() {
+        $(".active").removeClass("active");
+        $(this).addClass("active");
+      });
+
+      function address() {
+        this.addressJson = {
+
+          '苗栗縣': {
+            '苗栗市':'',
+            '頭份市':'',
+            '竹南鎮':'',
+            '後龍鎮':'',
+            '通霄鎮':'',
+            '苑裡鎮':'',
+            '卓蘭鎮':'',
+            '造橋鄉':'',
+            '西湖鄉':'',
+            '頭屋鄉':'',
+            '公館鄉':'',
+            '銅鑼鄉':'',
+            '三義鄉':'',
+            '大湖鄉':'',
+            '獅潭鄉':'',
+            '三灣鄉':'',
+            '南庄鄉':'',
+            '泰安鄉':'',
+          },
+          '台中市':{'東勢區':''},
+          
+          
+          }
+          
+
+        	this.getAreaArray = function (cityName) {
+	      	return Object.keys(this.addressJson[cityName]);
+	}
+
+      }
+      
+      let newAddress= new address();
+  
+
+$("#nav-city-group").children(this).click(function(){
+  var $this = this;
+	  console.log($this);
+  	let cityName = $("#nav-city-group").children($this).html();
+  	  console.log(cityName);
+  	let areaList = newAddress.getAreaArray(cityName);
+  	$('#nav-area-group a').remove();
+  	for(let area in areaList){
+  	  let a = '<a class="nav-item nav-link" href="#">' + areaList[area] +'</a>';
+          	$('#nav-area-group').append(a);
+  	}
+
+
+  
+  
+});
+
+    });
+  </script>
+</head>
+
+
+
+<body>
+
+
+  <nav class="container navbar navbar-expand-xl navbar-light bg-white">
+
+
+    <a class="navbar-brand nav-title" href="https://report-bbchuoo.c9users.io/report/html/home.html">中部景點拍</a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+
+
+        <li class="nav-item">
+
+
+          <a class="nav-link" href="https://report-bbchuoo.c9users.io/report/html/leaderboard/leaderboard.html">熱搜排行榜</a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          地區分類
+        </a>
+
+
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">苗栗縣</a>
+
+
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">臺中市</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">彰化縣</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">南投縣</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">雲林縣</a>
+          </div>
+
+        </li>
+        <!--end of 地區分類-->
+
+        <li>
+
+
+
+          <form class="form-inline my-2 my-lg-0">
+
+
+            <input class="form-control mr-sm-2" type="search" placeholder="關鍵字搜尋" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+      <!--end of ul-->
+
+
+
+
+      <ul class="navbar-nav ">
+
+        <li class="nav-item ">
+          <a class="nav-link" href="https://report-bbchuoo.c9users.io/report/html/join.html">加入會員</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="https://report-bbchuoo.c9users.io/report/html/sign.html">會員登入</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          我的收藏
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">追蹤清單</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">我要推薦</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#send-email">聯絡我們</a>
+          </div>
+
+    </div>
+    </ul>
+
+    </div>
+  </nav>
+
+
+
+
+  <div class="container">
+    
+    <nav class="nav nav-pills nav-fill" id='nav-city-group'>
+  <a class="nav-item nav-link active" href="#">苗栗縣</a>
+  <a class="nav-item nav-link" href="#">台中市</a>
+  <a class="nav-item nav-link" href="#">彰化縣</a>
+  <a class="nav-item nav-link " href="#">南投縣</a>
+  <a class="nav-item nav-link" href="#">雲林縣</a>
+</nav>
+    <hr/>
+        <nav class="nav nav-pills nav-fill" id="nav-area-group">
+
+    </nav>
+   
+  </div>
+
+  <!-- end of col-sm-6 -->
+
+  </div>
+  <!-- end of row -->
+
+  </div>
+  <!-- end of container -->
+
+  <!--底部-->
+
+  <div class="container-fluid block-bottom text-center">
+    <div class="row align-items-end">
+      <div class="col-sm-12 ">
+        <div class="block-bottom-text">
+          <h4>HELLO!</h4>
+          <h4>A LITTLE MORE BY MYSELF</h4>
+          <div class="block-bottom-icons">
+            <a href="#"><img src="../img/icon/iconsfacebook.png" ></a>
+            <a href="#"><img src="../img/icon/iconsinstagram.png"></a>
+          </div>
+          <span>有任何問題，歡迎來信<br/></span>
+          <span>E-mail:centralattractions@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
